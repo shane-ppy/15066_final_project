@@ -1,0 +1,11 @@
+pandas
+jupyter
+matplotlib
+scikit-learn
+scipy
+statsmodels
+pmdarima
+seaborn
+gurobipy
+nbconvert
+numpy==1.26.4
