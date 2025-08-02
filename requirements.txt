@@ -9,3 +9,4 @@ seaborn
 gurobipy
 nbconvert
 numpy==1.26.4
+openpyxl
