@@ -20,11 +20,7 @@ MAXCO2 = 13.8*1e7 # TODO this may be wayy to big
 
 # Total energy demand per capita in kWh, state level
 FNAME = os.path.join(FILE_DIR, "EnergyDemandByStateData.csv")
-STATES = pd.read_csv(FNAME, header=0, dtype={'State': str,
-                                               'Population': int,
-                                               'Demand': float,
-                                               })
-STATES = STATES.set_index('State')
+STATES = pd.read_csv(FNAME, index_col=0, header=0)
 
 # EV Capacity (avg) in kWh
 EVC_MAX = 80
