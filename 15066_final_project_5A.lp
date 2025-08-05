@@ -4,10 +4,10 @@ Minimize
   0.08933 Fuel[0] + 0.04272 Fuel[1] + 0.071 Fuel[2] + 0.05712 Fuel[3]
    + 0.03107 Fuel[4] + 0.02322 Fuel[5] + 0.03627 Fuel[6] + 0 C13
 Subject To
- R0: Fuel[0] + Fuel[1] + Fuel[2] + Fuel[3] + Fuel[4] + Fuel[5] + Fuel[6]
-   >= 1.34328945e+11
- R1: 820 Fuel[0] + 490 Fuel[1] + 12 Fuel[2] + 24 Fuel[3] + 11.5 Fuel[4]
-   + 44.5 Fuel[5] <= 1.2276e+13
+ Const1: Fuel[0] + Fuel[1] + Fuel[2] + Fuel[3] + Fuel[4] + Fuel[5]
+   + Fuel[6] >= 1.34328945e+11
+ Const2: 820 Fuel[0] + 490 Fuel[1] + 12 Fuel[2] + 24 Fuel[3] + 11.5 Fuel[4]
+   + 44.5 Fuel[5] <= 6.2e+12
  R2: Fuel[0] - 1.1417960325e+11 C7 <= 0
  R3: Fuel[1] - 1.1686618215e+11 C8 <= 0
  R4: Fuel[2] - 1.208960505e+11 C9 <= 0
